@@ -25,7 +25,7 @@ export default async function Home() {
 
 
       {/* ***Intro*** */}
-      <h1 id="intro" className="mt-20 text-6xl font-extrabold text-center ms-50 animate-jump-in animate-once animate-ease-out hover:text-white">Welcome</h1>
+      <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center ms-50 animate-jump-in animate-once animate-ease-out hover:text-white">Welcome</h1>
       <div className="justify-between mx-auto mt-10 lg:flex">
         <div className="relative flex items-center justify-center w-1/3">
           <div className="absolute bg-blue-700 rounded-full lg:w-64 lg:h-64"></div>
@@ -52,7 +52,7 @@ export default async function Home() {
 
       {/* ***Skills*** */}
       <div id="skills">
-        <h1 className="mt-20 text-6xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">Skills</h1>
+        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">Skills</h1>
         <div className="mt-10 lg:flex lg:flex-grow animate-fade-down animate-once animate-ease-out">
           <div className="w-1/3">
             <p className="pt-20 mt-5 text-3xl text-center hover:text-white">How I can add value to a company</p>
@@ -74,7 +74,7 @@ export default async function Home() {
 
       {/* ***Recent Works*** */}
       <div id="recent-works">
-        <h1 className="mt-20 text-6xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">
+        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">
           Recent Works
         </h1>
         <div className="justify-center mt-10 animate-fade-down animate-once animate-ease-out">
@@ -133,7 +133,7 @@ export default async function Home() {
 
       {/* ***Experience*** */}
       <div id="experience">
-        <h1 className="mt-20 text-6xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">Experience</h1>
+        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">Experience</h1>
 
         <p className="mt-10 mb-5 text-center animate-fade-down animate-once animate-ease-out hover:text-white">Inspite of having passion to be a programmer, I had to work in a couple of differnent positions for different companies</p>
         <div tabIndex={0} className="border border-b-0 border-blue-700 animate-fade-down animate-once animate-ease-out collapse collapse-plus">
@@ -176,11 +176,11 @@ export default async function Home() {
 
       {/* ***Education*** */}
       <div id="education">
-        <h1 className="mt-20 text-6xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">Education</h1>
+        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">Education</h1>
 
         {/* ***bsc*** */}
-        <div className="justify-center gap-6 mt-10 mb-5 animate-fade-down animate-once animate-ease-out md:grid md:grid-flow-col">
-          <div className="border border-blue-700 card w-96">
+        <div className="gap-6 mt-10 mb-5 me-3 animate-fade-down animate-once animate-ease-out md:grid md:grid-flow-col">
+          <div className="border border-blue-700 card">
             <div className="card-body">
               <h2 className=" card-title hover:text-white">Bachelor In Science Certificate (BSC)</h2>
               <p className="text-xl hover:text-white">American International University - Bangladesh (AIUB)</p>
@@ -193,7 +193,7 @@ export default async function Home() {
           </div>
 
           {/* ***hsc*** */}
-          <div className="border border-blue-700 animate-fade-down animate-once animate-ease-out card w-96">
+          <div className="border border-blue-700 animate-fade-down animate-once animate-ease-out card">
             <div className="card-body">
               <h2 className="card-title hover:text-white">Higher Secondary Certificate (HSC)</h2>
               <p className="text-xl hover:text-white">Safiuddin Sarker Academy & College</p>
@@ -207,7 +207,7 @@ export default async function Home() {
 
 
           {/* ***ssc*** */}
-          <div className="border border-blue-700 animate-fade-down animate-once animate-ease-out card w-96">
+          <div className="border border-blue-700 animate-fade-down animate-once animate-ease-out card">
             <div className="card-body">
               <h2 className="card-title hover:text-white">Secondary School Certificate (SSC)</h2>
               <p className="text-xl hover:text-white">Safiuddin Sarker Academy & College</p>
