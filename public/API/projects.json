@@ -1,0 +1,42 @@
+[
+    {
+       "id": 1,
+       "title": "Social Event Management App",
+       "description": "It is a web app demo for an event management company. The company which usually take contact for social events like wedding, baby shower etc",
+       "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, React Routing, Firebase Authentication, API integration from local json file",
+       "code": "https://github.com/emdad118661/social-event-management-emdad118661",
+       "site": "https://social-event-management-b206a.web.app/" 
+    },
+    {
+        "id": 2,
+        "title": "Donation Campaign Website ",
+        "description": "It is a web app demo for any charity foundation.",
+        "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, React Routing, Recharts, API integration from local json file",
+        "code": "https://github.com/emdad118661/donation-campaign-emdad118661/tree/main",
+        "site": "https://donation-campaign-emdad118661.surge.sh/" 
+    },
+    {
+        "id": 3,
+        "title": "Course Roaster App",
+        "description": "It is just a sample of course selling apps. If you select any course, it will show total credit hour, course name, total price on the right card",
+        "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, API integration from local json file",
+        "code": "https://github.com/emdad118661/course-roaster-emdad118661",
+        "site": "https://course-roaster-emdad118661.surge.sh/" 
+    },
+    {
+        "id": 4,
+        "title": "Job Portal Website",
+        "description": "It is a web sample of job portal site. Go details of any featured job and click on apply now. You will be able to see the job you have appplied in the applied job option. You can filter based on remote and on-site job you have applied there",
+        "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, React Routing, Local Storage used as storing some data, API integration from local json file",
+        "code": "https://github.com/emdad118661/react-career-hub",
+        "site": "https://dependent-lace.surge.sh/" 
+    },
+    {
+        "id": 5,
+        "title": "Blog Website",
+        "description": "It is sample of a blog website.",
+        "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, React Routing, Local Storage used as storing some data, API integration from local json file",
+        "code": "https://github.com/emdad118661/react-knowledge-cafe",
+        "site": "https://second-coach118661.surge.sh/" 
+    }
+]
