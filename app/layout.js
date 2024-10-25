@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="text-blue-700 bg-black">
+        <div className="text-blue-700">
           {/* ***navbar*** */}
           <div className="fixed top-0 left-0 z-50 w-full bg-black animate-fade-down animate-once animate-ease-out navbar">
             <div className="navbar-start">
