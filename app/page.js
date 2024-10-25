@@ -30,7 +30,7 @@ export default async function Home() {
         <div className="relative flex items-center justify-center w-1/3">
           <div className="absolute bg-blue-700 rounded-full lg:w-64 lg:h-64"></div>
           <div className="avatar">
-            <div className="rounded-full hover:w-72 hover:duration-1000 ring-primary ring-offset-blue-700 ring ring-offset-2">
+            <div className="rounded-full ring-primary ring-offset-blue-700 ring ring-offset-2">
               <Image
                 className="relative px-2 mt-5 rounded-full animate-once animate-ease-out animate-fade-down bottom-2"
                 src={DP}
