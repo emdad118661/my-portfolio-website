@@ -58,12 +58,12 @@ export default async function Home() {
             <p className="pt-20 mt-5 text-3xl text-center hover:text-white">How I can add value to a company</p>
             <Image src={codingBoy} alt="coding boy"></Image>
           </div>
-          <div className="w-2/3 gap-3 md:grid md:grid-cols-4">
+          <div className="w-2/3 md:ms-0 ms-14 md:gap-3 md:grid md:grid-cols-4">
             {
               skills.map(skill => <div key={skill.id}>
                 <div className="md:p-10 md:w-50 md:h-50 rounded-xl">
-                  <h1 className="mt-5 mb-2 text-2xl hover:text-white">{skill.title}</h1>
-                  <p className="hover:text-white">{skill.description}</p>
+                  <h1 className="mx-auto mt-5 mb-2 text-2xl text-center hover:text-white">{skill.title}</h1>
+                  <p className="mx-auto text-center hover:text-white">{skill.description}</p>
                 </div>
               </div>)
             }

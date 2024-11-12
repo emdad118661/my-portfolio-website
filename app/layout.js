@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
           </div>
 
           {/* ***main part*** */}
-          <div className="px-20 pt-10">
+          <div className="px-5 pt-10 md:px-20">
             {children}
           </div>
 
