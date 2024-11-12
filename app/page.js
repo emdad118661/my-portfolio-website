@@ -139,16 +139,16 @@ export default async function Home() {
         <div tabIndex={0} className="border border-b-0 border-blue-700 animate-fade-down animate-once animate-ease-out collapse collapse-plus">
           <div className="text-xl font-medium collapse-title hover:text-white">Daraz Bangladesh  (7 November, 2023 - 2 February, 2024)</div>
           <div className="collapse-content">
-            <h1 className="mb-3 text-xl hover:text-white">IT - Support & Services</h1>
+            <h1 className="mb-3 text-xl hover:text-white">Application - Support</h1>
             <h2 className="text-lg hover:text-white">Key Responsibilities:</h2>
             <br />
             <ul className="list-disc ms-3">
-              <li className="hover:text-white">Identifying and troubleshooting issues with office Laptops/desktops, LAN Cables, IT server and CCTV rack etc.</li>
-              <li className="hover:text-white">Maintenance the server of a specific zone.</li>
-              <li className="hover:text-white">Supporting network team for ensuring consistent connectivity of Internet in office.</li>
-              <li className="hover:text-white">Setting up and solving common issues of common software used by employees.</li>
-              <li className="hover:text-white">Helping system team in maintaining valuable Databases.</li>
-              <li className="hover:text-white">Keeping  up-to-date with trends in IT industry.</li>
+              <li className="hover:text-white">Identifying and troubleshooting error and bugs of the application.</li>
+              <li className="hover:text-white">Understanding requirements from QA team.</li>
+              <li className="hover:text-white">Supporting application developer team to implement new features</li>
+              <li className="hover:text-white">Developing UI from figma file made by UI/UX designer team.</li>
+              <li className="hover:text-white">API integration</li>
+              <li className="hover:text-white">Keeping  up-to-date with trends in Software industry.</li>
             </ul>
           </div>
         </div>
