@@ -42,7 +42,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        <div className="w-2/3">
+        <div className="md:w-2/3">
           <p className="mt-10 animate-once animate-ease-out animate-fade-down hover:text-white">An enthusiastic recent graduate with a strong foundation in web development and a passion for creating captivating user experiences. Leveraging proficiency in JavaScript, HTML, CSS, React JS, Bootstrap, Tailwind, responsive design, and Git, I aspire to contribute my skills to a dynamic team. Through my internship experience as a sales team member at a lead generation company and as an IT support at a online shopphing platform, I gained valuable insights into the latest technologies, software, and corporate culture. Eager to apply my technical expertise, I am dedicated to collaborating on innovative projects that make a meaningful impact.</p>
           {/* <p className="mt-5 hover:text-white">Want to know more??</p> */}
           {/* <div className="down-arrow"></div> */}
@@ -54,15 +54,15 @@ export default async function Home() {
       <div id="skills">
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">Skills</h1>
         <div className="mt-10 lg:flex lg:flex-grow animate-fade-down animate-once animate-ease-out">
-          <div className="w-1/3">
+          <div className="md:w-1/3">
             <p className="pt-20 mt-5 text-3xl text-center hover:text-white">How I can add value to a company</p>
             <Image src={codingBoy} alt="coding boy"></Image>
           </div>
           <div className="w-2/3 gap-3 md:grid md:grid-cols-4">
             {
               skills.map(skill => <div key={skill.id}>
-                <div className="p-10 w-50 h-50 rounded-xl">
-                  <h1 className="mb-2 text-2xl hover:text-white">{skill.title}</h1>
+                <div className="md:p-10 md:w-50 md:h-50 rounded-xl">
+                  <h1 className="mt-5 mb-2 text-2xl hover:text-white">{skill.title}</h1>
                   <p className="hover:text-white">{skill.description}</p>
                 </div>
               </div>)
@@ -134,9 +134,7 @@ export default async function Home() {
       {/* ***Experience*** */}
       <div id="experience">
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">Experience</h1>
-
-        <p className="mt-10 mb-5 text-center animate-fade-down animate-once animate-ease-out hover:text-white">Inspite of having passion to be a programmer, I had to work in a couple of differnent positions for different companies</p>
-        <div tabIndex={0} className="border border-b-0 border-blue-700 animate-fade-down animate-once animate-ease-out collapse collapse-plus">
+        <div tabIndex={0} className="mt-10 border border-b-0 border-blue-700 animate-fade-down animate-once animate-ease-out collapse collapse-plus">
           <div className="text-xl font-medium collapse-title hover:text-white">Daraz Bangladesh  (7 November, 2023 - 2 February, 2024)</div>
           <div className="collapse-content">
             <h1 className="mb-3 text-xl hover:text-white">Application - Support</h1>
@@ -179,7 +177,7 @@ export default async function Home() {
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-white animate-jump-in animate-once animate-ease-out">Education</h1>
 
         {/* ***bsc*** */}
-        <div className="gap-6 mt-10 mb-5 me-3 animate-fade-down animate-once animate-ease-out md:grid md:grid-flow-col">
+        <div className="mt-10 mb-5 md:gap-6 me-3 animate-fade-down animate-once animate-ease-out md:grid md:grid-flow-col">
           <div className="border border-blue-700 card">
             <div className="card-body">
               <h2 className=" card-title hover:text-white">Bachelor In Science Certificate (BSC)</h2>
@@ -193,7 +191,7 @@ export default async function Home() {
           </div>
 
           {/* ***hsc*** */}
-          <div className="border border-blue-700 animate-fade-down animate-once animate-ease-out card">
+          <div className="mt-5 border border-blue-700 md:mt-0 animate-fade-down animate-once animate-ease-out card">
             <div className="card-body">
               <h2 className="card-title hover:text-white">Higher Secondary Certificate (HSC)</h2>
               <p className="text-xl hover:text-white">Safiuddin Sarker Academy & College</p>
@@ -207,7 +205,7 @@ export default async function Home() {
 
 
           {/* ***ssc*** */}
-          <div className="border border-blue-700 animate-fade-down animate-once animate-ease-out card">
+          <div className="mt-5 border border-blue-700 md:mt-0 animate-fade-down animate-once animate-ease-out card">
             <div className="card-body">
               <h2 className="card-title hover:text-white">Secondary School Certificate (SSC)</h2>
               <p className="text-xl hover:text-white">Safiuddin Sarker Academy & College</p>
