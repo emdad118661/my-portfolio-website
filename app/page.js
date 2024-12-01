@@ -25,7 +25,7 @@ export default async function Home() {
 
 
       {/* ***Intro*** */}
-      <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center ms-50 animate-jump-in animate-once animate-ease-out hover:text-white">Welcome</h1>
+      <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center ms-50 animate-jump-in animate-once animate-ease-out hover:text-white">Hi, I&apos;m Emdadul Haque</h1>
       <div className="justify-between mx-auto mt-10 lg:flex">
         <div className="relative flex items-center justify-center w-1/3">
           <div className="absolute bg-blue-700 rounded-full lg:w-64 lg:h-64"></div>
