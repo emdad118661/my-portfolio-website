@@ -19,7 +19,7 @@ export default function Home() {
       {/* ***Intro*** */}
       <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center ms-50 animate-jump-in animate-once animate-ease-out hover:text-blue-700"> Hi,
         <Typewriter
-          words={[` I'm Emdadul Haque`]}
+          words={[' I am Emdadul Haque']}
           loop={0} // 0 for infinite loop
           typeSpeed={100} // Typing speed (ms per character)
           deleteSpeed={50} // Deleting speed (ms per character)
