@@ -1,19 +1,21 @@
-
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import DP from "@/public/images/Emdadul-Haque.png"
 import codingBoy from "@/public/images/coding-boy.png"
 import css from "@/public/style/style.css";
-import getAllSkills from "@/lib/getAllSkills";
-import getAllProjects from "@/lib/getAllProjects";
+import { Typewriter } from 'react-simple-typewriter';
+import skills from "@/public/API/skills.json";
+import projects from "@/public/API/projects.json";
 
 
 
 
-export default async function Home() {
 
-  const skills = await getAllSkills();
-  const projects = await getAllProjects();
+export default function Home() {
+
+  // const skills = await getAllSkills();
+  // const projects = await getAllProjects();
 
 
 
@@ -25,7 +27,15 @@ export default async function Home() {
 
 
       {/* ***Intro*** */}
-      <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center ms-50 animate-jump-in animate-once animate-ease-out hover:text-white">Hi, I&apos;m Emdadul Haque</h1>
+      <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center ms-50 animate-jump-in animate-once animate-ease-out hover:text-white"> Hi,
+      <Typewriter
+        words={[` I'm Emdadul Haque`]}
+        loop={0} // 0 for infinite loop
+        typeSpeed={100} // Typing speed (ms per character)
+        deleteSpeed={50} // Deleting speed (ms per character)
+        delaySpeed={1000} // Pause before deleting/looping
+      />
+      </h1>
       <div className="justify-between mx-auto mt-10 lg:flex">
         <div className="relative flex items-center justify-center w-1/3">
           <div className="absolute bg-blue-700 rounded-full lg:w-64 lg:h-64"></div>
