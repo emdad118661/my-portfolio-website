@@ -13,17 +13,8 @@ import projects from "@/public/API/projects.json";
 
 export default function Home() {
 
-  // const skills = await getAllSkills();
-  // const projects = await getAllProjects();
-
-
-
-
-
-
   return (
     <main>
-      
 
       {/* ***Intro*** */}
       <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center ms-50 animate-jump-in animate-once animate-ease-out hover:text-blue-700"> Hi,

@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      {/* I have used gredient on background */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-r from-black via-blue-900 via-50% to-black`}
       >
