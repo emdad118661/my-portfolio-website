@@ -26,20 +26,20 @@ export default function RootLayout({ children }) {
 
   // navbar options 
   const options = <>
-    <li className="hover:text-white"><Link href="#skills">Skills</Link></li>
-    <li className="hover:text-white"><Link href="#recent-works">Recent Works</Link></li>
-    <li className="hover:text-white"><Link href="#experience">Experience</Link></li>
-    <li className="hover:text-white"><Link href="#education">Education</Link></li>
+    <li className="hover:text-blue-700"><Link href="#skills">Skills</Link></li>
+    <li className="hover:text-blue-700"><Link href="#recent-works">Recent Works</Link></li>
+    <li className="hover:text-blue-700"><Link href="#experience">Experience</Link></li>
+    <li className="hover:text-blue-700"><Link href="#education">Education</Link></li>
   </>
 
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-r from-black via-blue-900 via-50% to-black`}
       >
-        <div className="text-blue-700">
+        <div className="text-white">
           {/* ***navbar*** */}
-          <div className="fixed top-0 left-0 z-50 w-full bg-black animate-fade-down animate-once animate-ease-out navbar">
+          <div className="fixed top-0 left-0 z-50 bg-gradient-to-r from-black via-blue-900 via-50% to-black w-full animate-fade-down animate-once animate-ease-out navbar">
             <div className="navbar-start">
               <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
                   {options}
                 </ul>
               </div>
-              <a href="#intro" className="text-xl font-extrabold hover:text-white">EMDADUL HAQUE</a>
+              <a href="#intro" className="text-xl font-extrabold hover:text-blue-700">EMDADUL HAQUE</a>
             </div>
             <div className="hidden navbar-center lg:flex">
               <ul className="px-1 menu menu-horizontal">
@@ -70,7 +70,7 @@ export default function RootLayout({ children }) {
               </ul>
             </div>
             <div className="navbar-end">
-              <Link href="#contact" className="mt-5 text-blue-700 border-blue-700 btn btn-outline hover:bg-blue-700">Contact Me</Link>
+              <Link href="#contact" className="mt-5 text-white border-white btn btn-outline hover:bg-blue-700">Contact Me</Link>
             </div>
           </div>
 
