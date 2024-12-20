@@ -51,9 +51,9 @@ export default function Home() {
       <div id="skills">
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">Skills</h1>
         <div className="mt-10 lg:flex lg:flex-grow animate-fade-down animate-once animate-ease-out">
-          <div className="md:ms-0 ms-14 md:gap-8 md:grid md:grid-cols-4">
+          <div className="gap-8 md:ms-24 md:grid md:grid-cols-4">
             {
-              skills.map(skill => <div key={skill.id}>
+              skills.map(skill => <div className="mb-5 md:mb-0" key={skill.id}>
                 <div className="flex items-center justify-center border border-white md:w-[250px] md:h-[70px] rounded-xl">
                   <Image className="ms-2" src={skill.image} alt="" width={40} height={40}></Image>
                   <h1 className="mx-auto mt-5 mb-4 text-center hover:text-blue-700 whitespace-nowrap">{skill.title}</h1>

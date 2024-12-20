@@ -30,11 +30,31 @@
 },
 {
     "id":7,
+    "title": "Tailwind CSS",
+    "image": "https://i.postimg.cc/7ZYR9hgf/tailwind-new-removebg-preview.png"
+},
+{
+    "id":8,
+    "title": "Daisy UI",
+    "image": "https://i.postimg.cc/4yfvG74c/daisyui-new-removebg-preview.png"
+},
+{
+    "id":9,
+    "title": "Flowbite",
+    "image": "https://i.postimg.cc/vT20SL7T/flowbite-new-removebg-preview.png"
+},
+{
+    "id":10,
+    "title": "Git",
+    "image": "https://i.postimg.cc/XvvctyJy/git-new-removebg-preview.png"
+},
+{
+    "id":11,
     "title": "Firebase Authentication",
     "image": "https://i.postimg.cc/MGkxKb7B/firebase-new-removebg-preview.png"
 },
 {
-    "id":8,
+    "id":12,
     "title": "JWT",
     "image": "https://i.postimg.cc/MTyfvW3Y/jwt-new-removebg-preview.png"
 }]
