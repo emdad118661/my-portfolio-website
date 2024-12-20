@@ -1,40 +1,40 @@
 [{
     "id":1,
     "title": "HTML",
-    "description": "HTML is the standard markup language for creating Web pages"
+    "image": "https://i.postimg.cc/Prbghs6m/html-removebg-preview.png"
 },
 {
     "id":2,
     "title": "CSS",
-    "description": "CSS is used to define styles for web pages, including the design, layout and variations in display for different devices and screen sizes."
+    "image": "https://i.postimg.cc/VvfVk5Zn/css-new-removebg-preview.png"
 },
 {
     "id":3,
     "title": "Javascript",
-    "description": "JavaScript is a scripting or programming language that allows to implement complex features on web pages"
+    "image": "https://i.postimg.cc/DzcQy69p/js-new-removebg-preview.png"
 },
 {
     "id":4,
-    "title": "Knowledge on Restfull API",
-    "description": "A REST API is an application programming interface (API) that follows the design principles of the REST architectural style."
+    "title": "Restfull API",
+    "image": "https://i.postimg.cc/rwMN67bR/api-new-removebg-preview.png"
 },
 {
     "id":5,
     "title": "React js",
-    "description": "React is a User Interface (UI) library of Javascript"
+    "image": "https://i.postimg.cc/Prbghs6m/html-removebg-preview.png"
 },
 {
     "id":6,
     "title": "Next js",
-    "description": "The React Framework for the Web."
+    "image": "https://i.postimg.cc/Prbghs6m/html-removebg-preview.png"
 },
 {
     "id":7,
     "title": "Firebase Authentication",
-    "description": "Firebase Authentication aims to make building secure authentication systems easy, while improving the sign-in and onboarding experience for end users."
+    "image": "https://i.postimg.cc/Prbghs6m/html-removebg-preview.png"
 },
 {
     "id":8,
     "title": "JWT",
-    "description": "JSON Web Token (JWT) is an open standard that defines a compact and self-contained way for securely transmitting information between parties as a JSON object."
+    "image": "https://i.postimg.cc/Prbghs6m/html-removebg-preview.png"
 }]

@@ -51,16 +51,12 @@ export default function Home() {
       <div id="skills">
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">Skills</h1>
         <div className="mt-10 lg:flex lg:flex-grow animate-fade-down animate-once animate-ease-out">
-          <div className="md:w-1/3">
-            <p className="pt-20 mt-5 text-3xl text-center hover:text-blue-700">How I can add value to a company</p>
-            <Image src={codingBoy} alt="coding boy"></Image>
-          </div>
-          <div className="w-2/3 md:ms-0 ms-14 md:gap-3 md:grid md:grid-cols-4">
+          <div className="md:ms-0 ms-14 md:gap-8 md:grid md:grid-cols-4">
             {
               skills.map(skill => <div key={skill.id}>
-                <div className="md:p-10 md:w-50 md:h-50 rounded-xl">
-                  <h1 className="mx-auto mt-5 mb-2 text-2xl text-center hover:text-blue-700">{skill.title}</h1>
-                  <p className="mx-auto text-center hover:text-blue-700">{skill.description}</p>
+                <div className="flex items-center justify-center border border-white md:w-[250px] md:h-[70px] rounded-xl">
+                  <Image className="ms-2" src={skill.image} alt="" width={40} height={40}></Image>
+                  <h1 className="mx-auto mt-5 mb-4 text-center hover:text-blue-700 whitespace-nowrap">{skill.title}</h1>
                 </div>
               </div>)
             }
