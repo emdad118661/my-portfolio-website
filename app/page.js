@@ -49,7 +49,15 @@ export default function Home() {
 
       {/* ***Skills*** */}
       <div id="skills">
-        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">Skills</h1>
+        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">S
+        <Typewriter
+          words={['kills']}
+          loop={0} // 0 for infinite loop
+          typeSpeed={100} // Typing speed (ms per character)
+          deleteSpeed={50} // Deleting speed (ms per character)
+          delaySpeed={1000} // Pause before deleting/looping
+        />
+        </h1>
         <div className="mt-10 lg:flex lg:flex-grow animate-fade-down animate-once animate-ease-out">
           <div className="gap-8 md:ms-24 md:grid md:grid-cols-4">
             {
@@ -68,7 +76,14 @@ export default function Home() {
       {/* ***Recent Works*** */}
       <div id="recent-works">
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">
-          Recent Works
+          R
+          <Typewriter
+          words={['ecent Works']}
+          loop={0} // 0 for infinite loop
+          typeSpeed={100} // Typing speed (ms per character)
+          deleteSpeed={50} // Deleting speed (ms per character)
+          delaySpeed={1000} // Pause before deleting/looping
+        />
         </h1>
         <div className="justify-center mt-10 animate-fade-down animate-once animate-ease-out">
           {projects.map((project) => (
@@ -126,7 +141,15 @@ export default function Home() {
 
       {/* ***Experience*** */}
       <div id="experience">
-        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">Experience</h1>
+        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">E
+        <Typewriter
+          words={['xperience']}
+          loop={0} // 0 for infinite loop
+          typeSpeed={100} // Typing speed (ms per character)
+          deleteSpeed={50} // Deleting speed (ms per character)
+          delaySpeed={1000} // Pause before deleting/looping
+        />
+        </h1>
         <div tabIndex={0} className="mt-10 border border-b-0 border-white-700 animate-fade-down animate-once animate-ease-out collapse collapse-plus">
           <div className="text-xl font-medium collapse-title hover:text-blue-700">Daraz Bangladesh  (7 November, 2023 - 2 February, 2024)</div>
           <div className="collapse-content">
@@ -167,7 +190,15 @@ export default function Home() {
 
       {/* ***Education*** */}
       <div id="education">
-        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">Education</h1>
+        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">E
+        <Typewriter
+          words={['ducation']}
+          loop={0} // 0 for infinite loop
+          typeSpeed={100} // Typing speed (ms per character)
+          deleteSpeed={50} // Deleting speed (ms per character)
+          delaySpeed={1000} // Pause before deleting/looping
+        />
+        </h1>
 
         {/* ***bsc*** */}
         <div className="mt-10 mb-5 md:gap-6 me-3 animate-fade-down animate-once animate-ease-out md:grid md:grid-flow-col">
