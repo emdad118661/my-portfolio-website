@@ -7,6 +7,9 @@ import css from "@/public/style/style.css";
 import { Typewriter } from 'react-simple-typewriter';
 import skills from "@/public/API/skills.json";
 import projects from "@/public/API/projects.json";
+import facebook from "@/public/images/facebook.png";
+import github from "@/public/images/github.png";
+import LinkedIn from "@/public/images/linkedin.png";
 
 
 
@@ -27,7 +30,7 @@ export default function Home() {
         />
       </h1>
       <div className="justify-between mx-auto mt-10 lg:flex">
-        <div className="relative flex items-center justify-center w-1/3">
+        <div className="relative flex items-center justify-center w-1/4">
           <div className="absolute bg-blue-700 rounded-full lg:w-64 lg:h-64"></div>
           <div className="avatar">
             <div className="rounded-full ring-primary ring-offset-blue-700 ring ring-offset-2">
@@ -42,21 +45,41 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="md:w-2/3">
+        <div className="md:w-3/4">
           <p className="mt-10 animate-once animate-ease-out animate-fade-down hover:text-blue-700">An enthusiastic recent graduate with a strong foundation in web development and a passion for creating captivating user experiences. Leveraging proficiency in JavaScript, HTML, CSS, React JS, Next JS, Bootstrap, Tailwind, responsive design, and Git, I aspire to contribute my skills to a dynamic team. Through my internship experience as an Application Support at a online shopping platform, I gained valuable insights into the latest technologies, software, and corporate culture. Eager to apply my technical expertise, I am dedicated to collaborating on innovative projects that make a meaningful impact.</p>
+          <div className="mt-10 md:flex md:gap-4">
+            <Link href="https://github.com/emdad118661" target="_blank">
+              <div className="flex items-center justify-center border border-white md:w-[180px] md:h-[60px] rounded-xl mb-5 md:mb-0">
+                <Image className="ms-2" src={github} alt="" width={40} height={40}></Image>
+                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap">My Github</h1>
+              </div>
+            </Link>
+            <Link href="https://www.linkedin.com/in/emdadul-haque-700691180/" target="_blank">
+              <div className="flex items-center justify-center border border-white md:w-[180px] md:h-[60px] rounded-xl mb-5 md:mb-0">
+                <Image className="ms-2" src={LinkedIn} alt="" width={40} height={40}></Image>
+                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap">My LinkedIn</h1>
+              </div>
+            </Link>
+            <Link href="https://www.facebook.com/imdadulhaq.speaking/" target="_blank">
+              <div className="flex items-center justify-center border border-white md:w-[180px] md:h-[60px] rounded-xl mb-5 md:mb-0">
+                <Image className="ms-2" src={facebook} alt="" width={40} height={40}></Image>
+                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap">My Facebook</h1>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
 
       {/* ***Skills*** */}
       <div id="skills">
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">S
-        <Typewriter
-          words={['kills']}
-          loop={0} // 0 for infinite loop
-          typeSpeed={100} // Typing speed (ms per character)
-          deleteSpeed={50} // Deleting speed (ms per character)
-          delaySpeed={1000} // Pause before deleting/looping
-        />
+          <Typewriter
+            words={['kills']}
+            loop={0} // 0 for infinite loop
+            typeSpeed={100} // Typing speed (ms per character)
+            deleteSpeed={50} // Deleting speed (ms per character)
+            delaySpeed={1000} // Pause before deleting/looping
+          />
         </h1>
         <div className="mt-10 lg:flex lg:flex-grow animate-fade-down animate-once animate-ease-out">
           <div className="gap-8 md:ms-24 md:grid md:grid-cols-4">
@@ -78,12 +101,12 @@ export default function Home() {
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">
           R
           <Typewriter
-          words={['ecent Works']}
-          loop={0} // 0 for infinite loop
-          typeSpeed={100} // Typing speed (ms per character)
-          deleteSpeed={50} // Deleting speed (ms per character)
-          delaySpeed={1000} // Pause before deleting/looping
-        />
+            words={['ecent Works']}
+            loop={0} // 0 for infinite loop
+            typeSpeed={100} // Typing speed (ms per character)
+            deleteSpeed={50} // Deleting speed (ms per character)
+            delaySpeed={1000} // Pause before deleting/looping
+          />
         </h1>
         <div className="justify-center mt-10 animate-fade-down animate-once animate-ease-out">
           {projects.map((project) => (
@@ -142,13 +165,13 @@ export default function Home() {
       {/* ***Experience*** */}
       <div id="experience">
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">E
-        <Typewriter
-          words={['xperience']}
-          loop={0} // 0 for infinite loop
-          typeSpeed={100} // Typing speed (ms per character)
-          deleteSpeed={50} // Deleting speed (ms per character)
-          delaySpeed={1000} // Pause before deleting/looping
-        />
+          <Typewriter
+            words={['xperience']}
+            loop={0} // 0 for infinite loop
+            typeSpeed={100} // Typing speed (ms per character)
+            deleteSpeed={50} // Deleting speed (ms per character)
+            delaySpeed={1000} // Pause before deleting/looping
+          />
         </h1>
         <div tabIndex={0} className="mt-10 border border-b-0 border-white-700 animate-fade-down animate-once animate-ease-out collapse collapse-plus">
           <div className="text-xl font-medium collapse-title hover:text-blue-700">Daraz Bangladesh  (7 November, 2023 - 2 February, 2024)</div>
@@ -191,13 +214,13 @@ export default function Home() {
       {/* ***Education*** */}
       <div id="education">
         <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">E
-        <Typewriter
-          words={['ducation']}
-          loop={0} // 0 for infinite loop
-          typeSpeed={100} // Typing speed (ms per character)
-          deleteSpeed={50} // Deleting speed (ms per character)
-          delaySpeed={1000} // Pause before deleting/looping
-        />
+          <Typewriter
+            words={['ducation']}
+            loop={0} // 0 for infinite loop
+            typeSpeed={100} // Typing speed (ms per character)
+            deleteSpeed={50} // Deleting speed (ms per character)
+            delaySpeed={1000} // Pause before deleting/looping
+          />
         </h1>
 
         {/* ***bsc*** */}
