@@ -10,6 +10,7 @@ import projects from "@/public/API/projects.json";
 import facebook from "@/public/images/facebook.png";
 import github from "@/public/images/github.png";
 import LinkedIn from "@/public/images/linkedin.png";
+import CV from "@/public/images/cv.png";
 
 
 
@@ -48,6 +49,12 @@ export default function Home() {
         <div className="md:w-3/4">
           <p className="mt-10 animate-once animate-ease-out animate-fade-down hover:text-blue-700">An enthusiastic recent graduate with a strong foundation in web development and a passion for creating captivating user experiences. Leveraging proficiency in JavaScript, HTML, CSS, React JS, Next JS, Bootstrap, Tailwind, responsive design, and Git, I aspire to contribute my skills to a dynamic team. Through my internship experience as an Application Support at a online shopping platform, I gained valuable insights into the latest technologies, software, and corporate culture. Eager to apply my technical expertise, I am dedicated to collaborating on innovative projects that make a meaningful impact.</p>
           <div className="mt-10 md:flex md:gap-4">
+            <Link href="./EMDADUL HAQUE-CV.pdf" target="_blank">
+              <div className="flex items-center justify-center border border-white md:w-[200px] md:h-[60px] rounded-xl mb-5 md:mb-0">
+                <Image className="ms-2" src={CV} alt="" width={40} height={40}></Image>
+                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap">Download My CV</h1>
+              </div>
+            </Link>
             <Link href="https://github.com/emdad118661" target="_blank">
               <div className="flex items-center justify-center border border-white md:w-[180px] md:h-[60px] rounded-xl mb-5 md:mb-0">
                 <Image className="ms-2" src={github} alt="" width={40} height={40}></Image>
