@@ -27,15 +27,6 @@ export default function Home() {
       yoyo: true, // Reverse animation to switch back to the original color
       ease: "power1.inOut", // Smooth transition
     })
-
-    gsap.to(".textwala", {
-      color: "blue",
-      duration: 1,
-      delay: 1,
-      repeat: -1,
-      yoyo: true, // Reverse animation to switch back to the original color
-      ease: "power1.inOut", // Smooth transition
-    })
   }, []);
 
 
@@ -75,25 +66,25 @@ export default function Home() {
             <Link href="./EMDADUL HAQUE-CV.pdf" target="_blank">
               <div className="flex items-center justify-center border borderwala border-white md:w-[200px] md:h-[60px] rounded-xl mb-5 md:mb-0">
                 <Image className="ms-2" src={CV} alt="" width={40} height={40}></Image>
-                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap textwala">Download My CV</h1>
+                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap ">Download My CV</h1>
               </div>
             </Link>
             <Link href="https://github.com/emdad118661" target="_blank">
               <div className="flex items-center justify-center border borderwala border-white md:w-[180px] md:h-[60px] rounded-xl mb-5 md:mb-0">
                 <Image className="ms-2" src={github} alt="" width={40} height={40}></Image>
-                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap textwala">My Github</h1>
+                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap ">My Github</h1>
               </div>
             </Link>
             <Link href="https://www.linkedin.com/in/emdadul-haque-700691180/" target="_blank">
               <div className="flex items-center justify-center border borderwala border-white md:w-[180px] md:h-[60px] rounded-xl mb-5 md:mb-0">
                 <Image className="ms-2" src={LinkedIn} alt="" width={40} height={40}></Image>
-                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap textwala">My LinkedIn</h1>
+                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap ">My LinkedIn</h1>
               </div>
             </Link>
             <Link href="https://www.facebook.com/imdadulhaq.speaking/" target="_blank">
               <div className="flex items-center justify-center border borderwala border-white md:w-[180px] md:h-[60px] rounded-xl mb-5 md:mb-0">
                 <Image className="ms-2" src={facebook} alt="" width={40} height={40}></Image>
-                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap textwala">My Facebook</h1>
+                <h1 className="mx-auto mt-5 mb-5 text-center hover:text-blue-700 whitespace-nowrap ">My Facebook</h1>
               </div>
             </Link>
           </div>
@@ -117,7 +108,7 @@ export default function Home() {
               skills.map(skill => <div className="mb-5 md:mb-0" key={skill.id}>
                 <div className="flex items-center justify-center border borderwala border-white md:w-[250px] md:h-[70px] rounded-xl">
                   <Image className="ms-2" src={skill.image} alt="" width={40} height={40}></Image>
-                  <h1 className="mx-auto mt-5 mb-4 text-center hover:text-blue-700 whitespace-nowrap textwala">{skill.title}</h1>
+                  <h1 className="mx-auto mt-5 mb-4 text-center hover:text-blue-700 whitespace-nowrap ">{skill.title}</h1>
                 </div>
               </div>)
             }
@@ -145,7 +136,7 @@ export default function Home() {
               tabIndex={project.id}
               className="mb-5 border border-white borderwala rounded-xl"
             >
-              <div className="text-xl font-extrabold collapse-title hover:text-blue-700 textwala">
+              <div className="text-xl font-extrabold collapse-title hover:text-blue-700 ">
                 {project.title}
               </div>
               <div className="ms-4">
@@ -161,7 +152,7 @@ export default function Home() {
                       Do you want to see Code?
                     </p>
                     <Link
-                      className="text-white borderwala border-white-700 btn btn-outline textwala hover:bg-blue-700"
+                      className="text-white borderwala border-white-700 btn btn-outline hover:bg-blue-700"
                       href={project.code}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -175,7 +166,7 @@ export default function Home() {
                       Do you want to go to the live link?
                     </p>
                     <Link
-                      className="mb-5 text-white border-white-700 btn btn-outline borderwala textwala hover:bg-blue-700"
+                      className="mb-5 text-white border-white-700 btn btn-outline borderwala hover:bg-blue-700"
                       href={project.site}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -204,7 +195,7 @@ export default function Home() {
           />
         </h1>
         <div tabIndex={0} className="mt-10 border border-b-0 borderwala border-white-700 animate-fade-down animate-once animate-ease-out collapse collapse-plus">
-          <div className="text-xl font-medium collapse-title hover:text-blue-700 textwala">Daraz Bangladesh  (7 November, 2023 - 2 February, 2024)</div>
+          <div className="text-xl font-medium collapse-title hover:text-blue-700 ">Daraz Bangladesh  (7 November, 2023 - 2 February, 2024)</div>
           <div className="collapse-content">
             <h1 className="mb-3 text-xl hover:text-blue-700">Application - Support</h1>
             <h2 className="text-lg hover:text-blue-700">Key Responsibilities:</h2>
@@ -221,7 +212,7 @@ export default function Home() {
         </div>
 
         <div tabIndex={0} className="border border-white borderwala collapse collapse-plus bg-base animate-fade-down animate-once animate-ease-out">
-          <div className="text-xl font-medium collapse-title hover:text-blue-700 textwala">Aggressive ROI Sdn. Bhd.  (9 March 2023 - 26 July 2023)</div>
+          <div className="text-xl font-medium collapse-title hover:text-blue-700 ">Aggressive ROI Sdn. Bhd.  (9 March 2023 - 26 July 2023)</div>
           <div className="collapse-content">
             <h1 className="mb-3 text-xl hover:text-blue-700">Digital Sales Solution Provider</h1>
             <h2 className="text-lg hover:text-blue-700">Key Responsibilities:</h2>
@@ -257,7 +248,7 @@ export default function Home() {
         <div className="mt-10 mb-5 md:gap-6 me-3 animate-fade-down animate-once animate-ease-out md:grid md:grid-flow-col">
           <div className="border border-white borderwala card">
             <div className="card-body">
-              <h2 className=" card-title hover:text-blue-700 textwala">Bachelor In Science Certificate (BSC)</h2>
+              <h2 className=" card-title hover:text-blue-700">Bachelor In Science Certificate (BSC)</h2>
               <p className="text-xl hover:text-blue-700">American International University - Bangladesh (AIUB)</p>
               <p className="text-lg hover:text-blue-700">Computer Science & Engineering (CSE)</p>
               <div className="flex">
@@ -270,7 +261,7 @@ export default function Home() {
           {/* ***hsc*** */}
           <div className="mt-5 border border-white borderwala md:mt-0 animate-fade-down animate-once animate-ease-out card">
             <div className="card-body">
-              <h2 className="card-title hover:text-blue-700 textwala">Higher Secondary Certificate (HSC)</h2>
+              <h2 className="card-title hover:text-blue-700 ">Higher Secondary Certificate (HSC)</h2>
               <p className="text-xl hover:text-blue-700">Safiuddin Sarker Academy & College</p>
               <p className="text-lg hover:text-blue-700">Science</p>
               <div className="flex">
@@ -284,7 +275,7 @@ export default function Home() {
           {/* ***ssc*** */}
           <div className="mt-5 border border-white borderwala md:mt-0 animate-fade-down animate-once animate-ease-out card">
             <div className="card-body">
-              <h2 className="card-title hover:text-blue-700 textwala">Secondary School Certificate (SSC)</h2>
+              <h2 className="card-title hover:text-blue-700 ">Secondary School Certificate (SSC)</h2>
               <p className="text-xl hover:text-blue-700">Safiuddin Sarker Academy & College</p>
               <p className="text-lg hover:text-blue-700">Science</p>
               <div className="flex">
