@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaMobile, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,10 +27,10 @@ export default function RootLayout({ children }) {
 
   // navbar options 
   const options = <>
-    <li className="hover:text-blue-700"><Link href="#skills">Skills</Link></li>
-    <li className="hover:text-blue-700"><Link href="#recent-works">Recent Works</Link></li>
-    <li className="hover:text-blue-700"><Link href="#experience">Experience</Link></li>
-    <li className="hover:text-blue-700"><Link href="#education">Education</Link></li>
+    <li className="hover:text-blue-700 textwala"><Link href="#skills">Skills</Link></li>
+    <li className="hover:text-blue-700 textwala"><Link href="#recent-works">Recent Works</Link></li>
+    <li className="hover:text-blue-700 textwala"><Link href="#experience">Experience</Link></li>
+    <li className="hover:text-blue-700 textwala"><Link href="#education">Education</Link></li>
   </>
 
   return (
@@ -71,7 +72,7 @@ export default function RootLayout({ children }) {
               </ul>
             </div>
             <div className="navbar-end">
-              <Link href="#contact" className="mt-5 text-white border-white btn btn-outline hover:bg-blue-700">Contact Me</Link>
+              <Link href="#contact" className="mt-5 text-white border-white textwala borderwala btn btn-outline hover:bg-blue-700">Contact Me</Link>
             </div>
           </div>
 
