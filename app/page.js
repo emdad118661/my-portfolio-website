@@ -21,7 +21,7 @@ export default function Home() {
   useEffect(() => {
     gsap.to(".borderwala", {
       borderColor: "blue",
-      duration: 1,
+      duration: 2,
       delay: 1,
       repeat: -1,
       yoyo: true, // Reverse animation to switch back to the original color
