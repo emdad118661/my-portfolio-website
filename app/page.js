@@ -13,12 +13,16 @@ import LinkedIn from "@/public/images/linkedin.png";
 import CV from "@/public/images/cv.png";
 import { use, useEffect } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 
 export default function Home() {
 
   useEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger);
+
     gsap.to(".borderwala", {
       borderColor: "blue",
       duration: 2,
@@ -27,6 +31,121 @@ export default function Home() {
       yoyo: true, // Reverse animation to switch back to the original color
       ease: "power1.inOut", // Smooth transition
     })
+
+    gsap.from(".textRight", {
+      opacity: 0,
+      x: 100,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".textRight",
+        scroller: "body",
+        start: "top 50%",
+        end: "top 10%",
+        scrub: 2,
+      }
+
+    })
+    gsap.from(".textLeft", {
+      opacity: 0,
+      x: -100,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".textLeft",
+        scroller: "body",
+        start: "top 50%",
+        end: "top 10%",
+        scrub: 2,
+      }
+    })
+
+    gsap.from(".workRight", {
+      opacity: 0,
+      x: 100,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".workRight",
+        scroller: "body",
+        start: "top 50%",
+        end: "top 10%",
+        scrub: 2,
+      }
+    })
+
+    gsap.from(".workLeft", {
+      opacity: 0,
+      x: -100,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".workLeft",
+        scroller: "body",
+        start: "top 50%",
+        end: "top 10%",
+        scrub: 2,
+      }
+    })
+
+    gsap.from(".exRight", {
+      opacity: 0,
+      x: 100,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".exRight",
+        scroller: "body", 
+        start: "top 70%",
+        end: "top 10%",
+        scrub: 2,
+      }
+    })
+
+    gsap.from(".exLeft", {
+      opacity: 0,
+      x: -100,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".exLeft",
+        scroller: "body",  
+        start: "top 70%",
+        end: "top 0%",
+        scrub: 2,
+      }
+    })
+
+    gsap.from(".eduRight", {
+      opacity: 0,
+      x: 100,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".eduRight",
+        scroller: "body",
+        start: "top 50%",
+        end: "top 10%",
+        scrub: 2,
+      }
+    })
+
+    gsap.from(".eduLeft", {
+      opacity: 0,
+      x: -100,
+      duration: 2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".eduLeft",
+        scroller: "body",
+        start: "top 50%",
+        end: "top 10%",
+        scrub: 2,
+      }
+    })
+
+
+
   }, []);
 
 
@@ -35,9 +154,9 @@ export default function Home() {
     <main>
 
       {/* ***Intro*** */}
-      <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center ms-50 animate-jump-in animate-once animate-ease-out hover:text-blue-700"> Hi,
+      <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center md:mt-32 ms-50 hover:text-blue-700"> Hi, I am 
         <Typewriter
-          words={[' I am Emdadul Haque']}
+          words={[' Emdadul Haque']}
           loop={0} // 0 for infinite loop
           typeSpeed={100} // Typing speed (ms per character)
           deleteSpeed={50} // Deleting speed (ms per character)
@@ -45,12 +164,12 @@ export default function Home() {
         />
       </h1>
       <div className="justify-between mx-auto mt-10 lg:flex">
-        <div className="relative flex items-center justify-center w-1/4">
+        <div className="relative flex items-center justify-center w-1/4 animate-fade-down animate-once animate-ease-out">
           <div className="absolute bg-blue-700 rounded-full lg:w-64 lg:h-64"></div>
           <div className="avatar">
             <div className="rounded-full ring-primary ring-offset-blue-700 ring ring-offset-2">
               <Image
-                className="relative px-2 mt-5 rounded-full animate-once animate-ease-out animate-fade-down bottom-2"
+                className="relative px-2 mt-5 rounded-full bottom-2"
                 src={DP}
                 alt="DP"
                 quality={100}
@@ -61,8 +180,8 @@ export default function Home() {
           </div>
         </div>
         <div className="md:w-3/4">
-          <p className="mt-10 animate-once animate-ease-out animate-fade-down hover:text-blue-700">An enthusiastic recent graduate with a strong foundation in web development and a passion for creating captivating user experiences. Leveraging proficiency in JavaScript, HTML, CSS, React JS, Next JS, Bootstrap, Tailwind, responsive design, and Git, I aspire to contribute my skills to a dynamic team. Through my internship experience as an Application Support at a online shopping platform, I gained valuable insights into the latest technologies, software, and corporate culture. Eager to apply my technical expertise, I am dedicated to collaborating on innovative projects that make a meaningful impact.</p>
-          <div className="mt-10 md:flex md:gap-4">
+          <p className="mt-10 animate-fade-down animate-once animate-ease-out hover:text-blue-700">An enthusiastic recent graduate with a strong foundation in web development and a passion for creating captivating user experiences. Leveraging proficiency in JavaScript, HTML, CSS, React JS, Next JS, Bootstrap, Tailwind, responsive design, and Git, I aspire to contribute my skills to a dynamic team. Through my internship experience as an Application Support at a online shopping platform, I gained valuable insights into the latest technologies, software, and corporate culture. Eager to apply my technical expertise, I am dedicated to collaborating on innovative projects that make a meaningful impact.</p>
+          <div className="mt-10 md:flex md:gap-4 animate-fade-down animate-once animate-ease-out">
             <Link href="./EMDADUL HAQUE-CV.pdf" target="_blank">
               <div className="flex items-center justify-center border borderwala border-white md:w-[200px] md:h-[60px] rounded-xl mb-5 md:mb-0">
                 <Image className="ms-2" src={CV} alt="" width={40} height={40}></Image>
@@ -93,20 +212,12 @@ export default function Home() {
 
       {/* ***Skills*** */}
       <div id="skills">
-        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">S
-          <Typewriter
-            words={['kills']}
-            loop={0} // 0 for infinite loop
-            typeSpeed={100} // Typing speed (ms per character)
-            deleteSpeed={50} // Deleting speed (ms per character)
-            delaySpeed={1000} // Pause before deleting/looping
-          />
-        </h1>
-        <div className="mt-10 lg:flex lg:flex-grow animate-fade-down animate-once animate-ease-out">
+        <h1 className="mt-20 text-4xl font-extrabold text-center textLeft md:mt-60 hover:text-blue-700">Skills</h1>
+        <div className="mt-10 lg:flex lg:flex-grow">
           <div className="gap-8 md:ms-24 md:grid md:grid-cols-4">
             {
               skills.map(skill => <div className="mb-5 md:mb-0" key={skill.id}>
-                <div className="flex items-center justify-center border borderwala border-white md:w-[250px] md:h-[70px] rounded-xl">
+                <div className="textRight flex items-center justify-center border borderwala border-white md:w-[250px] md:h-[70px] rounded-xl">
                   <Image className="ms-2" src={skill.image} alt="" width={40} height={40}></Image>
                   <h1 className="mx-auto mt-5 mb-4 text-center hover:text-blue-700 whitespace-nowrap ">{skill.title}</h1>
                 </div>
@@ -119,22 +230,13 @@ export default function Home() {
 
       {/* ***Recent Works*** */}
       <div id="recent-works">
-        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">
-          R
-          <Typewriter
-            words={['ecent Works']}
-            loop={0} // 0 for infinite loop
-            typeSpeed={100} // Typing speed (ms per character)
-            deleteSpeed={50} // Deleting speed (ms per character)
-            delaySpeed={1000} // Pause before deleting/looping
-          />
-        </h1>
-        <div className="justify-center mt-10 animate-fade-down animate-once animate-ease-out">
+        <h1 className="mt-20 text-4xl font-extrabold text-center workLeft md:mt-60 hover:text-blue-700">Recent Works</h1>
+        <div className="justify-center mt-10">
           {projects.map((project) => (
             <div
               key={project.id}
               tabIndex={project.id}
-              className="mb-5 border border-white borderwala rounded-xl"
+              className="mb-5 border border-white workRight borderwala rounded-xl"
             >
               <div className="text-xl font-extrabold collapse-title hover:text-blue-700 ">
                 {project.title}
@@ -185,16 +287,8 @@ export default function Home() {
 
       {/* ***Experience*** */}
       <div id="experience">
-        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">E
-          <Typewriter
-            words={['xperience']}
-            loop={0} // 0 for infinite loop
-            typeSpeed={100} // Typing speed (ms per character)
-            deleteSpeed={50} // Deleting speed (ms per character)
-            delaySpeed={1000} // Pause before deleting/looping
-          />
-        </h1>
-        <div tabIndex={0} className="mt-10 border border-b-0 borderwala border-white-700 animate-fade-down animate-once animate-ease-out collapse collapse-plus">
+        <h1 className="mt-20 text-4xl font-extrabold text-center md:mt-60 exLeft hover:text-blue-700">Experience</h1>
+        <div tabIndex={0} className="mt-10 border border-b-0 exRight borderwala border-white-700 collapse collapse-plus">
           <div className="text-xl font-medium collapse-title hover:text-blue-700 ">Daraz Bangladesh  (7 November, 2023 - 2 February, 2024)</div>
           <div className="collapse-content">
             <h1 className="mb-3 text-xl hover:text-blue-700">Application - Support</h1>
@@ -211,7 +305,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div tabIndex={0} className="border border-white borderwala collapse collapse-plus bg-base animate-fade-down animate-once animate-ease-out">
+        <div tabIndex={0} className="border border-white exLeft borderwala collapse collapse-plus bg-base">
           <div className="text-xl font-medium collapse-title hover:text-blue-700 ">Aggressive ROI Sdn. Bhd.  (9 March 2023 - 26 July 2023)</div>
           <div className="collapse-content">
             <h1 className="mb-3 text-xl hover:text-blue-700">Digital Sales Solution Provider</h1>
@@ -234,18 +328,10 @@ export default function Home() {
 
       {/* ***Education*** */}
       <div id="education">
-        <h1 className="mt-20 text-4xl font-extrabold text-center hover:text-blue-700 animate-jump-in animate-once animate-ease-out">E
-          <Typewriter
-            words={['ducation']}
-            loop={0} // 0 for infinite loop
-            typeSpeed={100} // Typing speed (ms per character)
-            deleteSpeed={50} // Deleting speed (ms per character)
-            delaySpeed={1000} // Pause before deleting/looping
-          />
-        </h1>
+        <h1 className="mt-20 text-4xl font-extrabold text-center md:mt-60 eduRight hover:text-blue-700">Education</h1>
 
         {/* ***bsc*** */}
-        <div className="mt-10 mb-5 md:gap-6 me-3 animate-fade-down animate-once animate-ease-out md:grid md:grid-flow-col">
+        <div className="mt-10 mb-5 eduLeft md:gap-6 me-3 md:grid md:grid-flow-col">
           <div className="border border-white borderwala card">
             <div className="card-body">
               <h2 className=" card-title hover:text-blue-700">Bachelor In Science Certificate (BSC)</h2>
@@ -259,7 +345,7 @@ export default function Home() {
           </div>
 
           {/* ***hsc*** */}
-          <div className="mt-5 border border-white borderwala md:mt-0 animate-fade-down animate-once animate-ease-out card">
+          <div className="mt-5 border border-white eduRight borderwala md:mt-0 card">
             <div className="card-body">
               <h2 className="card-title hover:text-blue-700 ">Higher Secondary Certificate (HSC)</h2>
               <p className="text-xl hover:text-blue-700">Safiuddin Sarker Academy & College</p>
@@ -273,7 +359,7 @@ export default function Home() {
 
 
           {/* ***ssc*** */}
-          <div className="mt-5 border border-white borderwala md:mt-0 animate-fade-down animate-once animate-ease-out card">
+          <div className="mt-5 border border-white eduLeft borderwala md:mt-0 card">
             <div className="card-body">
               <h2 className="card-title hover:text-blue-700 ">Secondary School Certificate (SSC)</h2>
               <p className="text-xl hover:text-blue-700">Safiuddin Sarker Academy & College</p>

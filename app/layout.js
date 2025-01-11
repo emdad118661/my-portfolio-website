@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* I have used gredient on background */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-r from-black via-blue-900 via-50% to-black`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-r from-black via-blue-900 via-50% to-black overflow-x-hidden`}
       >
         <div className="text-white">
           {/* ***navbar*** */}
@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
               </ul>
             </div>
             <div className="navbar-end">
-              <Link href="#contact" className="mt-5 text-white border-white  borderwala btn btn-outline hover:bg-blue-700">Contact Me</Link>
+              <Link href="#contact" className="mt-5 text-white border-white borderwala btn btn-outline hover:bg-blue-700">Contact Me</Link>
             </div>
           </div>
 
