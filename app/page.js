@@ -98,8 +98,8 @@ export default function Home() {
       scrollTrigger: {
         trigger: ".exRight",
         scroller: "body",
-        start: "top 70%",
-        end: "top 10%",
+        start: "top 80%",
+        end: "top 20%",
         scrub: 2,
       }
     })
@@ -112,8 +112,8 @@ export default function Home() {
       scrollTrigger: {
         trigger: ".exLeft",
         scroller: "body",
-        start: "top 70%",
-        end: "top 0%",
+        start: "top 80%",
+        end: "top 20%",
         scrub: 2,
       }
     })
@@ -126,7 +126,8 @@ export default function Home() {
       scrollTrigger: {
         trigger: ".eduRight",
         scroller: "body",
-        start: "top 50%",
+        markers: true,
+        start: "top 100%",
         end: "top 10%",
         scrub: 2,
       }
@@ -140,7 +141,8 @@ export default function Home() {
       scrollTrigger: {
         trigger: ".eduLeft",
         scroller: "body",
-        start: "top 50%",
+        markers: true,
+        start: "top 100%",
         end: "top 10%",
         scrub: 2,
       }
