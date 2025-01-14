@@ -11,13 +11,15 @@ import facebook from "@/public/images/facebook.png";
 import github from "@/public/images/github.png";
 import LinkedIn from "@/public/images/linkedin.png";
 import CV from "@/public/images/cv.png";
-import { use, useEffect } from "react";
+import { use, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 
 export default function Home() {
+
+  const lineRefs = useRef([]);
 
   useEffect(() => {
 
@@ -95,7 +97,7 @@ export default function Home() {
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".exRight",
-        scroller: "body", 
+        scroller: "body",
         start: "top 70%",
         end: "top 10%",
         scrub: 2,
@@ -109,7 +111,7 @@ export default function Home() {
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".exLeft",
-        scroller: "body",  
+        scroller: "body",
         start: "top 70%",
         end: "top 0%",
         scrub: 2,
@@ -144,9 +146,50 @@ export default function Home() {
       }
     })
 
+    lineRefs.current.forEach((line, index) => {
+      if (line) {
+        line.addEventListener("mousemove", (dets) => {
+          const path = `M 10 100 Q ${dets.x} ${dets.y} 990 100`;
+          gsap.to(line.querySelector("svg path"), {
+            attr: { d: path },
+            duration: 0.3,
+            ease: "power3.out",
+          });
+        });
+
+        line.addEventListener("mouseleave", () => {
+          const finalPath = `M 10 100 Q 500 100 990 100`;
+          gsap.to(line.querySelector("svg path"), {
+            attr: { d: finalPath },
+            duration: 1.5,
+            ease: "elastic.out(1, 0.2)",
+          });
+        });
+      }
+    });
+
+    return () => {
+      lineRefs.current.forEach((line) => {
+        if (line) {
+          line.removeEventListener("mousemove");
+          line.removeEventListener("mouseleave");
+        }
+      });
+    };
 
 
   }, []);
+
+  const endLine = (index) => (
+    <div
+      className="string h-[500px] w-full flex items-center justify-center"
+      ref={(el) => (lineRefs.current[index] = el)} // Set unique ref
+    >
+      <svg width="1000" height="500">
+        <path d="M 10 100 Q 500 100 990 100" stroke="white" fill="transparent" />
+      </svg>
+    </div>
+  );
 
 
 
@@ -154,7 +197,7 @@ export default function Home() {
     <main>
 
       {/* ***Intro*** */}
-      <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center md:mt-32 ms-50 hover:text-blue-700"> Hi, I am 
+      <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center md:mt-32 ms-50 hover:text-blue-700"> Hi, I am
         <Typewriter
           words={[' Emdadul Haque']}
           loop={0} // 0 for infinite loop
@@ -210,9 +253,12 @@ export default function Home() {
         </div>
       </div>
 
+      {/* ***End Line*** */}
+      {endLine(0)}
+
       {/* ***Skills*** */}
       <div id="skills">
-        <h1 className="mt-20 text-4xl font-extrabold text-center textLeft md:mt-60 hover:text-blue-700">Skills</h1>
+        <h1 className="text-4xl font-extrabold text-center hover:text-blue-700">Skills</h1>
         <div className="mt-10 lg:flex lg:flex-grow">
           <div className="gap-8 md:ms-24 md:grid md:grid-cols-4">
             {
@@ -227,10 +273,12 @@ export default function Home() {
         </div>
       </div>
 
+      {/* ***End Line*** */}
+      {endLine(1)}
 
       {/* ***Recent Works*** */}
       <div id="recent-works">
-        <h1 className="mt-20 text-4xl font-extrabold text-center workLeft md:mt-60 hover:text-blue-700">Recent Works</h1>
+        <h1 className="text-4xl font-extrabold text-center hover:text-blue-700">Recent Works</h1>
         <div className="justify-center mt-10">
           {projects.map((project) => (
             <div
@@ -284,10 +332,13 @@ export default function Home() {
         </div>
       </div>
 
+      {/* ***End Line*** */}
+      {endLine(2)}
+
 
       {/* ***Experience*** */}
       <div id="experience">
-        <h1 className="mt-20 text-4xl font-extrabold text-center md:mt-60 exLeft hover:text-blue-700">Experience</h1>
+        <h1 className="text-4xl font-extrabold text-center hover:text-blue-700">Experience</h1>
         <div tabIndex={0} className="mt-10 border border-b-0 exRight borderwala border-white-700 collapse collapse-plus">
           <div className="text-xl font-medium collapse-title hover:text-blue-700 ">Daraz Bangladesh  (7 November, 2023 - 2 February, 2024)</div>
           <div className="collapse-content">
@@ -324,11 +375,12 @@ export default function Home() {
       </div>
 
 
-
+      {/* ***End Line*** */}
+      {endLine(3)}
 
       {/* ***Education*** */}
       <div id="education">
-        <h1 className="mt-20 text-4xl font-extrabold text-center md:mt-60 eduRight hover:text-blue-700">Education</h1>
+        <h1 className="text-4xl font-extrabold text-center hover:text-blue-700">Education</h1>
 
         {/* ***bsc*** */}
         <div className="mt-10 mb-5 eduLeft md:gap-6 me-3 md:grid md:grid-flow-col">
