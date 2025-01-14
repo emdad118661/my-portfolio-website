@@ -126,7 +126,6 @@ export default function Home() {
       scrollTrigger: {
         trigger: ".eduRight",
         scroller: "body",
-        markers: true,
         start: "top 100%",
         end: "top 10%",
         scrub: 2,
@@ -141,7 +140,6 @@ export default function Home() {
       scrollTrigger: {
         trigger: ".eduLeft",
         scroller: "body",
-        markers: true,
         start: "top 100%",
         end: "top 10%",
         scrub: 2,
