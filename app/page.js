@@ -14,7 +14,7 @@ import CV from "@/public/images/cv.png";
 import { use, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import Snowfall from 'react-snowfall';
 
 
 export default function Home() {
@@ -195,6 +195,8 @@ export default function Home() {
 
   return (
     <main>
+      {/* Snowfall */}
+      <Snowfall style={{position: 'fixed', width: '100%', height: '60%',}} color="white" snowflakeCount={30} />
 
       {/* ***Intro*** */}
       <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center md:mt-32 ms-50 hover:text-blue-700"> Hi, I am
@@ -255,6 +257,7 @@ export default function Home() {
 
       {/* ***End Line*** */}
       {endLine(0)}
+
 
       {/* ***Skills*** */}
       <div id="skills">

@@ -5,6 +5,7 @@ import { FaMobile, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-gradient-to-r from-black via-blue-900 via-50% to-black overflow-x-hidden`}
       >
+        
         <div className="text-white">
           {/* ***navbar*** */}
           <div className="fixed top-0 left-0 z-50 bg-gradient-to-r from-black via-blue-900 via-50% to-black w-full animate-fade-down animate-once animate-ease-out navbar">
