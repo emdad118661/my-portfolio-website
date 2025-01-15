@@ -22,7 +22,6 @@ export default function Home() {
   const lineRefs = useRef([]);
 
   useEffect(() => {
-
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(".borderwala", {
@@ -194,9 +193,10 @@ export default function Home() {
 
 
   return (
-    <main>
+    <main className="relative">
+      
       {/* Snowfall */}
-      <Snowfall style={{position: 'fixed', width: '100%', height: '60%',}} color="white" snowflakeCount={30} />
+        <Snowfall style={{ position: 'fixed', width: '100%', height: '100%', zIndex: 0,}} color="white" snowflakeCount={50} spread={2000} />
 
       {/* ***Intro*** */}
       <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center md:mt-32 ms-50 hover:text-blue-700"> Hi, I am
