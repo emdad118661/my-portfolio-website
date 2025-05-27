@@ -11,7 +11,7 @@ import facebook from "@/public/images/facebook.png";
 import github from "@/public/images/github.png";
 import LinkedIn from "@/public/images/linkedin.png";
 import CV from "@/public/images/cv.png";
-import { use, useEffect, useRef } from "react";
+import { use, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Snowfall from 'react-snowfall';
@@ -20,6 +20,8 @@ import Snowfall from 'react-snowfall';
 export default function Home() {
 
   const lineRefs = useRef([]);
+  const [showAll, setShowAll] = useState(false);
+  const limitedProjects = showAll ? projects : projects.slice(0, 4);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -194,9 +196,9 @@ export default function Home() {
 
   return (
     <main className="relative">
-      
+
       {/* Snowfall */}
-        <Snowfall style={{ position: 'fixed', width: '100%', height: '100%', zIndex: 0,}} color="white" snowflakeCount={50} spread={2000} />
+      <Snowfall style={{ position: 'fixed', width: '100%', height: '100%', zIndex: 0, }} color="white" snowflakeCount={50} spread={2000} />
 
       {/* ***Intro*** */}
       <h1 id="intro" className="mt-20 text-4xl font-extrabold text-center md:mt-32 ms-50 hover:text-blue-700"> Hi, I am
@@ -283,7 +285,7 @@ export default function Home() {
       <div id="recent-works">
         <h1 className="text-4xl font-extrabold text-center hover:text-blue-700">Recent Works</h1>
         <div className="justify-center mt-10">
-          {projects.map((project) => (
+          {limitedProjects.map((project) => (
             <div
               key={project.id}
               tabIndex={project.id}
@@ -306,13 +308,26 @@ export default function Home() {
                     </p>
                     <Link
                       className="text-white borderwala border-white-700 btn btn-outline hover:bg-blue-700"
-                      href={project.code}
+                      href={project.code1}
                       target="_blank"
                       rel="noopener noreferrer"
 
                     >
-                      Click Here
+                      Click Here {project.code2 ? '- Front End' : ''}
                     </Link>
+                    {
+                      project.code2 && (
+                        <Link
+                          className="text-white ms-3 borderwala border-white-700 btn btn-outline hover:bg-blue-700"
+                          href={project.code2}
+                          target="_blank"
+                          rel="noopener noreferrer"
+
+                        >
+                          Click Here - Back End
+                        </Link>
+                      )
+                    }
                   </div>
                   <div className="flex mt-5">
                     <p className="mt-3 hover:text-blue-700 me-2">
@@ -333,6 +348,17 @@ export default function Home() {
             </div>
           ))}
         </div>
+
+        {!showAll && (
+        <div className="mt-5 text-center">
+          <button
+            className="text-white btn btn-outline hover:bg-blue-700"
+            onClick={() => setShowAll(true)}
+          >
+            See More
+          </button>
+        </div>
+      )}
       </div>
 
       {/* ***End Line*** */}
