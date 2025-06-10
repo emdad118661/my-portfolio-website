@@ -21,7 +21,7 @@ export default function Home() {
 
   const lineRefs = useRef([]);
   const [showAll, setShowAll] = useState(false);
-  const limitedProjects = showAll ? projects : projects.slice(0, 4);
+  const limitedProjects = showAll ? projects : projects.slice(0, 5);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
