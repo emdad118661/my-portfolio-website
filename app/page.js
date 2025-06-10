@@ -302,7 +302,7 @@ export default function Home() {
                   <p className="hover:text-blue-700">
                     <b>Technology Used:</b> {project.technologies}
                   </p>
-                  <div className="flex mt-5">
+                  <div className="mt-5 md:flex">
                     <p className="mt-3 hover:text-blue-700 me-2">
                       Do you want to see Code?
                     </p>
@@ -318,7 +318,7 @@ export default function Home() {
                     {
                       project.code2 && (
                         <Link
-                          className="text-white ms-3 borderwala border-white-700 btn btn-outline hover:bg-blue-700"
+                          className="mt-2 text-white md:ms-3 borderwala md:mt-0 border-white-700 btn btn-outline hover:bg-blue-700"
                           href={project.code2}
                           target="_blank"
                           rel="noopener noreferrer"
