@@ -303,18 +303,23 @@ export default function Home() {
                     <b>Technology Used:</b> {project.technologies}
                   </p>
                   <div className="mt-5 md:flex">
-                    <p className="mt-3 hover:text-blue-700 me-2">
-                      Do you want to see Code?
-                    </p>
-                    <Link
-                      className="text-white borderwala border-white-700 btn btn-outline hover:bg-blue-700"
-                      href={project.code1}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    {
+                      project.code1 && (
+                        <div className="md:flex">
+                          <p className="mt-3 hover:text-blue-700 me-2">
+                            Do you want to see Code?
+                          </p>
+                          <Link
+                            className="text-white borderwala border-white-700 btn btn-outline hover:bg-blue-700"
+                            href={project.code1}
+                            target="_blank"
+                            rel="noopener noreferrer"
 
-                    >
-                      Click Here {project.code2 ? '- Front End' : ''}
-                    </Link>
+                          >
+                            Click Here {project.code2 ? '- Front End' : ''}
+                          </Link>
+                        </div>)
+                    }
                     {
                       project.code2 && (
                         <Link
@@ -343,6 +348,7 @@ export default function Home() {
                       Click Here
                     </Link>
                   </div>
+                  {project.note && <small className="ms-5">Note: *click on advanced, then proceed to www.realestate-118661.infinityfree.me to watch the link*</small>}
                 </div>
               </div>
             </div>
@@ -350,15 +356,15 @@ export default function Home() {
         </div>
 
         {!showAll && (
-        <div className="mt-5 text-center">
-          <button
-            className="text-white btn btn-outline hover:bg-blue-700"
-            onClick={() => setShowAll(true)}
-          >
-            See More
-          </button>
-        </div>
-      )}
+          <div className="mt-5 text-center">
+            <button
+              className="text-white btn btn-outline hover:bg-blue-700"
+              onClick={() => setShowAll(true)}
+            >
+              See More
+            </button>
+          </div>
+        )}
       </div>
 
       {/* ***End Line*** */}
