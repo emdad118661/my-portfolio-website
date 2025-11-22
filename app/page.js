@@ -265,10 +265,10 @@ export default function Home() {
       <div id="skills">
         <h1 className="text-4xl font-extrabold text-center hover:text-blue-700">Skills</h1>
         <div className="mt-10 flex justify-center">
-          <div className="grid gap-8 md:grid-cols-4 justify-items-center">
+          <div className="grid gap-8 md:grid-cols-4 md:justify-items-center">
             {
               skills.map(skill => <div className="mb-5 md:mb-0" key={skill.id}>
-                <div className="textRight flex items-center justify-center border borderwala border-white md:w-[250px] md:h-[70px] rounded-xl">
+                <div className="textRight flex items-center justify-center border borderwala border-white md:w-[250px] md:h-[70px] rounded-xl md:px-0 px-2">
                   <Image className="ms-2" src={skill.image} alt="" width={40} height={40}></Image>
                   <h1 className="mx-auto mt-5 mb-4 text-center hover:text-blue-700 whitespace-nowrap ">{skill.title}</h1>
                 </div>

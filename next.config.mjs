@@ -86,6 +86,19 @@ const nextConfig = {
               pathname: '/XvvctyJy/**',
               search: '',
             },
+            {
+              protocol: 'https',
+              hostname: 'i.postimg.cc',
+              port: '',
+              pathname: '/ZR9b3xyx/**',
+              search: '',
+            },{
+              protocol: 'https',
+              hostname: 'i.postimg.cc',
+              port: '',
+              pathname: '/L5YJ9MTL/**',
+              search: '',
+            }
           ],
         },      
 };

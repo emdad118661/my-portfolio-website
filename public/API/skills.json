@@ -57,4 +57,15 @@
     "id":12,
     "title": "JWT",
     "image": "https://i.postimg.cc/MTyfvW3Y/jwt-new-removebg-preview.png"
-}]
+},
+{
+    "id":13,
+    "title": "MongoDB",
+    "image": "https://i.postimg.cc/ZR9b3xyx/gemini-3-pro-image-preview-nano-banana-pro-a-image-er-circle-er-a-removebg-preview.png"
+},
+{
+    "id":14,
+    "title": "WordPress",
+    "image": "https://i.postimg.cc/L5YJ9MTL/wordpress-logo-computer-icons-removebg-preview.png"
+}
+]
