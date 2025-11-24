@@ -18,8 +18,18 @@
         "code2": "https://github.com/emdad118661/emdad118661-mern-book-server",
         "site": "https://mern-book-client-6zrz.onrender.com/" 
      },
-    {
+     {
         "id": 2,
+        "title": "MERN Dropshipping Site (Site development is in progress....)",
+        "description": "It is a drophipping platform. Where I have customer can order, seller can sell their products by their own.",
+        "technologies": "MongoDB, ExpressJS, NodeJS, ReactJS, React Router, Firebase Authentication, DaisyUI, TailwindCSS, React Icons, Flowbite-react",
+        "code1": "https://github.com/emdad118661/dropshipping-client",
+        "code2": "https://github.com/emdad118661/dropshipping-server",
+        "site": "https://dropshipping-client.onrender.com/"
+
+     },
+    {
+        "id": 3,
         "title": "E-Commerce Demo App",
         "description": "It is a web app demo for an E-commerce Site. Converted from a figma design",
         "technologies": "HTML, CSS, TailwindCSS, Javascript, NextJS, DaisyUI, Flowbite, API integration from local json file",
@@ -27,7 +37,7 @@
         "site": "https://b2gsoft-project.vercel.app/" 
      },
      {
-        "id": 3,
+        "id": 4,
         "title": "Hashrid Company Landing Page (Figma to HTML, CSS, Vanila JS)",
         "description": "Hashrid is a company who works on Blockchain Development. It is their hardcoded landing page demo.",
         "technologies" : "I used basic things here. HTML, CSS, JavaScript, responsive design for mobile and tablet",
@@ -35,7 +45,7 @@
         "site" : "https://emdad118661.github.io/sanmo-task/sanmo.html"
      },  
     {
-       "id": 4,
+       "id": 5,
        "title": "Landing Page Design of a Restaurant",
        "description": "It is a landing page demo for a restaurant. Converted from a figma design",
        "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, API integration from local json file, DaisyUI",
@@ -43,7 +53,7 @@
        "site": "https://test-for-softnio-tvoz.vercel.app/" 
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Social Event Management App",
         "description": "It is a web app demo for an event management company. The company which usually take contact for social events like wedding, baby shower etc",
         "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, React Routing, Firebase Authentication, API integration from local json file, DaisyUI",
@@ -51,7 +61,7 @@
         "site": "https://social-event-management-b206a.web.app/" 
      },
     {
-        "id": 6,
+        "id": 7,
         "title": "Donation Campaign Website ",
         "description": "It is a web app demo for any charity foundation.",
         "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, React Routing, Recharts, API integration from local json file, DaisyUI",
@@ -59,7 +69,7 @@
         "site": "https://donation-campaign-emdad118661.surge.sh/" 
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "Course Roaster App",
         "description": "It is just a sample of course selling apps. If you select any course, it will show total credit hour, course name, total price on the right card",
         "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, API integration from local json file, DaisyUI",
@@ -67,7 +77,7 @@
         "site": "https://course-roaster-emdad118661.surge.sh/" 
     },
     {
-        "id": 8,
+        "id": 9,
         "title": "Job Portal Website",
         "description": "It is a web sample of job portal site. Go details of any featured job and click on apply now. You will be able to see the job you have appplied in the applied job option. You can filter based on remote and on-site job you have applied there",
         "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, React Routing, Local Storage used as storing some data, API integration from local json file, DaisyUI",
@@ -75,7 +85,7 @@
         "site": "https://dependent-lace.surge.sh/" 
     },
     {
-        "id": 9,
+        "id": 10,
         "title": "Blog Website",
         "description": "It is sample of a blog website.",
         "technologies": "HTML, CSS, TailwindCSS, Javascript, ReactJS, React Routing, Local Storage used as storing some data, API integration from local json file, DaisyUI",
